@@ -72,7 +72,7 @@ A frontend Task Manager application built with **Next.js** to help users manage 
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/task-manager.git
+git https://github.com/nButane2710/Task-Manager.git
 cd task-manager
 
 # Install dependencies 
