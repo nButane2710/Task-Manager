@@ -78,12 +78,9 @@ export default function EditTaskPage() {
         onChange={handleChange}
         className="w-full p-2 border mb-2"
       >
-        <div
-        className='text-black'>
-          <option value="Low">Low</option>
-          <option value="Medium">Medium</option>
-          <option value="High">High</option>
-        </div>
+        <option value="Low" className='text-black'>Low</option>
+        <option value="Medium" className='text-black'>Medium</option>
+        <option value="High" className='text-black'>High</option>
       </select>
       <input
         name="tags"
@@ -98,12 +95,9 @@ export default function EditTaskPage() {
         onChange={handleChange}
         className="w-full p-2 border mb-4"
       >
-        <div
-        className='text-black'>
-          <option value="Todo">Todo</option>
-          <option value="In Progress">In Progress</option>
-          <option value="Done">Done</option>
-        </div>
+        <option value="Todo" className='text-black'>Todo</option>
+        <option value="In Progress" className='text-black'>In Progress</option>
+        <option value="Done" className='text-black'>Done</option>
       </select>
 
       <div className="flex gap-4">

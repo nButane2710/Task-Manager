@@ -28,13 +28,10 @@ export default function FilterSortBar({ onFilterChange }: FilterProps) {
   return (
     <div className="flex flex-col md:flex-row gap-2 mb-4">
       <select name="status" value={localFilters.status} onChange={handleChange} className="p-2 border">
-        <div
-        className='text-black'>
-          <option value="">All Status</option>
-          <option value="Todo">Todo</option>
-          <option value="In Progress">In Progress</option>
-          <option value="Done">Done</option>
-        </div>
+        <option value="" className='text-black'>All Status</option>
+        <option value="Todo" className='text-black'>Todo</option>
+        <option value="In Progress" className='text-black'>In Progress</option>
+        <option value="Done" className='text-black'>Done</option>
       </select>
 
       <input
@@ -45,23 +42,17 @@ export default function FilterSortBar({ onFilterChange }: FilterProps) {
         className="p-2 border"
       />
 
-      <select name="due" value={localFilters.due} onChange={handleChange} className="p-2 border">
-        <div
-        className='text-black'>
-          <option value="">All Dates</option>
-          <option value="today">Today</option>
-          <option value="week">This Week</option>
-        </div>
+      <select name="due" value={localFilters.due} onChange={handleChange} className="p-2 border" >
+        <option value="" className='text-black'>All Dates</option>
+        <option value="today" className='text-black'>Today</option>
+        <option value="week" className='text-black'>This Week</option>
       </select>
 
       <select name="sort" value={localFilters.sort} onChange={handleChange} className="p-2 border">
-        <div
-        className='text-black'>
-          <option value="">No Sort</option>
-          <option value="dueDate">Due Date</option>
-          <option value="priority">Priority</option>
-          <option value="createdAt">Creation Date</option>
-        </div>
+        <option value="" className='text-black'>No Sort</option>
+        <option value="dueDate" className='text-black'>Due Date</option>
+        <option value="priority" className='text-black'>Priority</option>
+        <option value="createdAt" className='text-black'>Creation Date</option>
       </select>
     </div>
   );
