@@ -5,7 +5,7 @@ import { Task } from '@/types/task';
 export default function TaskCard({ task }: { task: Task }) {
   const deleteTask = useTaskStore((s) => s.deleteTask);
 
-  // 🧩 Add this logic for background color:
+  // Add this logic for background color:
   let bgColor = '';
   if (task.priority === 'High') {
     bgColor = 'bg-red-200';

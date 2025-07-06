@@ -10,6 +10,7 @@ interface TaskStore {
   setTasks: (tasks: Task[]) => void;
 }
 
+// builds a Zustand hook matching TaskStore interface
 export const useTaskStore = create<TaskStore>()(
   persist(
     (set) => ({

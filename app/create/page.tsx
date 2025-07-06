@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useTaskStore } from '@/lib/store';
 import * as yup from 'yup';
 
-// ✅ Yup validation schema
+// Yup validation schema
 const taskSchema = yup.object().shape({
   title: yup.string().required('Title is required'),
   description: yup.string(),
@@ -14,7 +14,7 @@ const taskSchema = yup.object().shape({
   status: yup.string().oneOf(['Todo', 'In Progress', 'Done']).required(),
 });
 
-// ✅ Local form state (tags as string)
+// Local form state (tags as string)
 type TaskFormState = {
   title: string;
   description: string;
